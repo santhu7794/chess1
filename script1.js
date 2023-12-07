@@ -31,5 +31,9 @@
         document.getElementById('17').src='';
        document.getElementById('37').src = 'white b.png'
     }
+    function mm(){
+        document.getElementById('18').src='';
+       document.getElementById('38').src = 'white b.png'
+    }
    
    
