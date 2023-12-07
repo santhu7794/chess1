@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="price"> </p>
+    <p id="name"></p>
+    <p id="santhu"></p>
+    <p id="nani"></p>
+    <p id="san"></p>
+    <p id="s"></p>
+    <p id="sa"></p>
+    <p id="sam"></p>
+    <p id="sant"></p>
+    <p id="nani1"></p>
+    <p id="nani2"> </p>
+    <p id="raju"></p>
+    <p id="script"></p>
+
+    <!-- data types -->
+    <script>
+        document.write("html using with java script");
+        var a = 10;
+        var b = "string"
+        var c = a + b;
+
+        document.getElementById("demo").innerHTML = "The value c is:" + c;
+        // variables
+
+        var car = "tata"
+
+        let price = 200;
+
+       
+
+        document.getElementById("price").innerHTML = "The value price is:" + price;
+        var a = 10;
+        var b = '20';
+        document.getElementById("name").innerHTML = typeof a + "<br>" + typeof b;
+        var a = 10;
+        var b = '2';
+
+        document.getElementById("santhu").innerHTML = typeof a + "<br>" + typeof b + "<br>" + a ** b;
+
+        var a = 10;
+        var b = 9;
+        b = b + 1;
+        //b+=1;
+        document.getElementById("nani").innerHTML = typeof a + "<br>" + typeof b + "<br>" + a + "<br>" + b;
+        //Compression
+        var a = 10;
+        var b = 3;
+        document.getElementById("san").innerHTML = (a === b) + "<br>" + (a == b) + "<br>" + (a > b);
+        //logical
+        var a = 10;
+        var b = 9;
+        document.getElementById("s").innerHTML = (a == b && b < a) + "<br>" + (a == b || b < a) + "<br>" + (!(a == b));
+        //conditional 
+        var a = 10;
+        var b = 9;
+        document.getElementById("sa").innerHTML = a < b ? (" b is big") : ("a is big");
+        // implicit conversion
+        var a = 10;
+        var b = 3;
+        document.getElementById("sam").innerHTML = (a + b) + "<br>" + (a - b) + "<br>" + (a / b);
+        var a = 10.786;
+        document.getElementById("sant").innerHTML = parseInt(a) + "<br>" + parseFloat(a) + "<br>" + Math.floor(a);
+        var a = 10.786;
+        //for loop
+        var a = ["name", "mobile", "email"]
+        for (i = 0; i < a.length; i++) {
+            a[i];
+        }
+        document.getElementById("nani1").innerHTML = a;
+        console.log(a);
+        // for loop
+        sum = 0;
+        for (i = 1; i <= 10; i++) {
+            sum = sum + i;
+
+        }
+        document.getElementById("nani2").innerHTML = sum
+
+        //if condition
+        var age = 5;
+
+        if (age < 15) {
+            console.log("my age is 5")
+        }
+        
+        //if else condition
+        var age = 20
+
+        if (age < 15) {
+            console.log("my age is 10")
+
+
+        }
+        else {
+            document.write("my age is 20")
+            console.log(age);
+        }
+        //if ladder
+
+        var a = 2; b = 10; c = 14;
+        if (a > b) {
+            document.write("a is big" + "<br>")
+        }
+        else if (c < b) {
+            document.write("b  is correct ");
+        }
+        else {
+            document.getElementById("demo").innerHTML = "  c is a correct"
+
+        }
+        var Grade = 'B';
+        var result;
+        switch (Grade) {
+            case 'A': result = "A Grade";
+                break;
+            case 'B': result = "B Grade";
+                break;
+            case 'C': result: "C Grade";
+                break;
+            default: result = "fail";
+
+        }
+        document.getElementById("raju").innerHTML = result;
+
+        console.log(result)
+
+         // switch
+
+     let  m=prompt("enter your marks")
+          var result;
+          switch(m){
+        
+             case m: result="A grade";
+             
+             break;
+         
+            default:;
+
+             
+             
+          }
+          console.log( m)
+
+
+
+    </script>
+
+</body>

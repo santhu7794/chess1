@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // create a map
+        var santhu = new Map([
+            ["raju", 25],
+            ["sharath", 26],
+            ["akhil", 24]
+        ]);
+        document.getElementById("demo").innerHTML = santhu.get("akhil");
+        // set map
+          santhu.set("raju", 25);
+          santhu.set("sharath", 26);
+           santhu.set ("akhil", 24);
+           // delete map
+           santhu.delete("akhil");
+    
+        document.getElementById("demo").innerHTML = santhu.get("raju") +"<br>"+ santhu.size +"<br>"+santhu.has("sharath") ;
+
+    </script>
+</body>
+
+</html>

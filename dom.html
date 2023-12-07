@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="main"></div>
+    <p id="intro">Finding HTML Elements by Id</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+    <p>dfkjhdasjkh</p>
+    <p id ="demo"> </p>
+    <p class="nani">color</p>
+    <p class="nani">color2</p>
+    <p class="nani">santhu</p>
+    <script>
+      var elem= document.getElementById("demo").innerHTML ="this is called by id";
+       var arr=document.getElementsByClassName("nani")[0].style.color = "red";
+       var element=document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML='the text in first paragarph (index 0) is:'+ element[3].innerHTML;
+var element = document.getElementById("intro");
+//intro
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
