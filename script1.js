@@ -27,5 +27,9 @@
         document.getElementById('15').src='';
        document.getElementById('35').src = 'white b.png'
     }
+    function mo(){
+        document.getElementById('17').src='';
+       document.getElementById('37').src = 'white b.png'
+    }
    
    
