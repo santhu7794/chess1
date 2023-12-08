@@ -35,5 +35,9 @@
         document.getElementById('18').src='';
        document.getElementById('38').src = 'white b.png'
     }
+    function p(){
+        document.getElementById('8').src='';
+       document.getElementById('68').src = 'm1.png'
+    }
    
    
