@@ -43,5 +43,8 @@
         document.getElementById('3').src='';
        document.getElementById('12').src = 'b1.webp'
     }
-   
+    function nadeem(){
+        document.getElementById('6').src='';
+       document.getElementById('15').src = 'b1.webp'
+    }
    
