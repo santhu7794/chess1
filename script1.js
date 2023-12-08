@@ -39,5 +39,9 @@
         document.getElementById('8').src='';
        document.getElementById('68').src = 'm1.png'
     }
+    function nani(){
+        document.getElementById('3').src='';
+       document.getElementById('12').src = 'b1.webp'
+    }
    
    
