@@ -47,4 +47,12 @@
         document.getElementById('6').src='';
        document.getElementById('15').src = 'b1.webp'
     }
+    function script(){
+        document.getElementById('4').src='';
+       document.getElementById('3').src = 'k1.png'
+    }
+    function sa(){
+        document.getElementById('5').src='';
+       document.getElementById('14').src = 'q1.png'
+    }
    
