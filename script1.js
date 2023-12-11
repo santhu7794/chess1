@@ -63,3 +63,7 @@ function san() {
     document.getElementById('22').src = '';
     document.getElementById('41').src = 'white b.png'
 }
+function ab() {
+    document.getElementById('72').src = '';
+    document.getElementById('62').src = 'white b.png'
+}
