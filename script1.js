@@ -55,3 +55,11 @@ function sa() {
     document.getElementById('5').src = '';
     document.getElementById('14').src = 'q1.png'
 }
+function on() {
+    document.getElementById('71').src = '';
+    document.getElementById('51').src = ' white b.png'
+}
+function san() {
+    document.getElementById('22').src = '';
+    document.getElementById('41').src = 'white b.png'
+}
