@@ -57,7 +57,7 @@ function sa() {
 }
 function on() {
     document.getElementById('71').src = '';
-    document.getElementById('51').src = ' white b.png'
+    document.getElementById('51').src = ' black b.png'
 }
 function san() {
     document.getElementById('22').src = '';
@@ -65,5 +65,5 @@ function san() {
 }
 function ab() {
     document.getElementById('72').src = '';
-    document.getElementById('62').src = 'white b.png'
+    document.getElementById('62').src = 'black b.png'
 }
