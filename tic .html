@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="board"></div>
+
+    <script>
+        // Define players
+        const playerX = 'X';
+        const playerO = 'O';
+
+        // Initialize the board
+        let currentPlayer = playerX;
+        let board = ['', '', '', '', '', '', '', '', ''];
+
+        // Get DOM elements
+        const boardElement = document.getElementById('board');
+
+        // Function to handle cell click
+        function handleCellClick(index) {
+            if (board[index] === '' && !isGameOver()) {
+                board[index] = currentPlayer;
+                renderBoard();
+                switchPlayer();
+            }
+            
+        }
+
+        // Function to switch players
+        function switchPlayer() {
+            currentPlayer = currentPlayer === playerX ? playerO : playerX;
+        }
+
+        // Function to check if the game is over
+        function isGameOver() {
+            return getWinner() || board.every(cell => cell !== '');
+        }
+
+        // Function to get the winner
+        function getWinner() {
+            const winConditions = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                [0, 4, 8], [2, 4, 6]             // Diagonals
+            ];
+
+            for (const condition of winConditions) {
+                const [a, b, c] = condition;
+                if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+                    return board[a];
+                }
+            }
+
+            return null;
+        }
+
+        // Function to render the board
+        function renderBoard() {
+            boardElement.innerHTML = '';
+            board.forEach((value, index) => {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.textContent = value;
+                cell.addEventListener('click', () => handleCellClick(index));
+                boardElement.appendChild(cell);
+            });
+
+            const winner = getWinner();
+            if (winner) {
+                alert(`Player ${winner} wins!`);
+            } else if (board.every(cell => cell !== '')) {
+                alert('It\'s a draw!');
+            }
+        }
+
+        // Initial rendering
+        renderBoard();
+    </script>
+</body>
+</html>
