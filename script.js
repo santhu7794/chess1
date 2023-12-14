@@ -63,7 +63,6 @@ function checkWinner() {
     }
 }
 function handleClick(el) {
-
     const id = Number(el.id);
     if (arr[id] !== null) 
     return;
@@ -71,5 +70,4 @@ function handleClick(el) {
     el.innerText = currentPlayer;
     checkWinner();
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-
 }
