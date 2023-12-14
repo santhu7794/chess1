@@ -12,8 +12,6 @@
 // function t(){
 //     document.getElementById("3").innerHTML = "X"
 //     document.getElementById("4").innerHTML='X'
-
-
 // }
 
 // function X1() {
