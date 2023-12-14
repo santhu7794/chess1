@@ -54,11 +54,11 @@ function checkWinner() {
         (arr[0] !== null && arr[0] == arr[4] && arr[4] == arr[8]) ||
         (arr[2] !== null && arr[2] == arr[4] && arr[4] == arr[6])
     ) {
-        document.write(`winner is ${currentPlayer}`)
+        alert(`winner is ${currentPlayer}`)
         return;
     }
     if (!arr.some((el) => el === null)) {
-        document.write(`Draw !!`)
+        alert(`Draw !!`)
         return;
     }
 }
