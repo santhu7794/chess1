@@ -62,7 +62,7 @@ function checkWinner() {
         return;
     }
 }
-function handleClick(el) {
+function santhosh(el) {
     const id = Number(el.id);
     if (arr[id] !== null) 
     return;
